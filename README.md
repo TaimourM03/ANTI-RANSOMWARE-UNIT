@@ -37,13 +37,13 @@ El sistema permite:
 
 ## 🧠 Features
 
-🔍 Scraping automatizado de leak sites en Tor
-⏱️ Monitorización periódica (cron jobs)
-🗃️ Base de datos NoSQL optimizada (MongoDB)
-🖥️ CLI para análisis avanzado y reporting
-📊 Dashboard web interactivo (gráficas dinámas)
-🔔 Alertas en Telegram en tiempo real
-🐳 Infraestructura completamente dockerizada
+- 🔍 Scraping automatizado de leak sites en Tor
+- ⏱️ Monitorización periódica (cron jobs)
+- 🗃️ Base de datos NoSQL optimizada (MongoDB)
+- 🖥️ CLI para análisis avanzado y reporting
+- 📊 Dashboard web interactivo (gráficas dinámas)
+- 🔔 Alertas en Telegram en tiempo real
+- 🐳 Infraestructura completamente dockerizada
 
 ---
 
