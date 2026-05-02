@@ -22,33 +22,75 @@
 
 ## 🚨 Problemática
 
-El ransomware es una amenaza crítica cuya información está fragmentada y oculta en la dark web.
+El ransomware se ha convertido en una de las principales amenazas globales, con ataques que impactan:
+
+- Operaciones empresariales
+- Integridad de datos
+- Costes financieros elevados
+
+Sin embargo, gran parte de la información relevante:
+
+- Está fragmentada
+- Se encuentra en la dark web (Tor leak sites)
+- No es fácilmente explotable para análisis
 
 ---
 
 ## 💡 Solución
 
-GARU automatiza:
+GARU (Guineueta Anti Ransom Unit) centraliza todo el ciclo de inteligencia:
 
-Recolección → Procesamiento → Almacenamiento → Análisis → Visualización
+Recolección → Normalización → Almacenamiento → Análisis → Visualización
+
+El sistema permite:
+
+- Detectar nuevos ataques automáticamente
+- Analizar tendencias por país, banda y fecha
+- Generar dashboards dinámicos
+- Recibir alertas en tiempo real
 
 ---
 
 ## 🧠 Features
 
-- Scraping en Tor
-- MongoDB
-- CLI avanzada
-- Dashboard web
-- Alertas Telegram
-- Dockerizado
+🔍 Scraping automatizado de leak sites en Tor
+⏱️ Monitorización periódica (cron jobs)
+🗃️ Base de datos NoSQL optimizada (MongoDB)
+🖥️ CLI para análisis avanzado y reporting
+📊 Dashboard web interactivo (gráficas dinámas)
+🔔 Alertas en Telegram en tiempo real
+🐳 Infraestructura completamente dockerizada
 
 ---
 
 ## 🏗️ Arquitectura
 
 ```
-Tor → Scraper → MongoDB → CLI / Web / Alerts
+               ┌────────────────────────────┐
+                │        TOR NETWORK         │
+                │   (Leak Sites scraping)   │
+                └────────────┬──────────────┘
+                             │
+                     [Tor Scripts - Python]
+                             │
+                             ▼
+                ┌────────────────────────────┐
+                │        GRS SERVICE         │
+                │  - Data processing         │
+                │  - Normalization           │
+                │  - Alert system            │
+                └────────────┬──────────────┘
+                             │
+                             ▼
+                ┌────────────────────────────┐
+                │        MongoDB             │
+                │  Collection: bandas        │
+                └────────────┬──────────────┘
+                             │
+        ┌────────────────────┼────────────────────┐
+        ▼                    ▼                    ▼
+   CLI Manager         Web Dashboard        Telegram Bot
+   (Python)            (PHP/JS)             (Alerts)
 ```
 
 ---
@@ -102,12 +144,10 @@ Notificaciones en tiempo real vía Telegram.
 
 ---
 
-## 👥 Autores
+⭐ Valor diferencial
 
-Equipo GARU
+GARU no es solo un scraper:
 
----
-
-## 📄 Licencia
-
-MIT
+→ Es una plataforma completa de threat intelligence
+→ Automatiza el ciclo completo de análisis
+→ Está preparada para escalar y evolucionar
