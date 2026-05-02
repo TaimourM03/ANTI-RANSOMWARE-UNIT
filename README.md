@@ -92,8 +92,8 @@ El sistema permite:
 ## 🚀 Instalación
 
 ```bash
-git clone https://github.com/tuusuario/garu-project.git
-cd garu-project
+git clone https://github.com/TaimourM03/ANTI-RANSOMWARE-UNIT.git
+cd ANTI-RANSOMWARE-UNIT
 docker-compose up -d
 ```
 
