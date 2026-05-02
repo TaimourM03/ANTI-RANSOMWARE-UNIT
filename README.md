@@ -4,22 +4,6 @@
 
 ---
 
-## 📸 Demo
-
-### 🌐 Dashboard Web
-![Dashboard](images/dashboard.png)
-
-### 📊 Generación de gráficas
-![Graphs](images/graphs.png)
-
-### 🖥️ CLI de análisis
-![CLI](images/cli.png)
-
-### 🗃️ MongoDB UI
-![Mongo](images/mongo.png)
-
----
-
 ## 🚨 Problemática
 
 El ransomware se ha convertido en una de las principales amenazas globales, con ataques que impactan:
@@ -141,6 +125,20 @@ Notificaciones en tiempo real vía Telegram.
 - API REST
 - ML detección ransomware
 - UI moderna
+
+## 📸 Demo
+
+### 🌐 Dashboard Web
+![Dashboard](images/dashboard.png)
+
+### 📊 Generación de gráficas
+![Graphs](images/graphs.png)
+
+### 🖥️ CLI de análisis
+![CLI](images/cli.png)
+
+### 🗃️ MongoDB UI
+![Mongo](images/mongo.png)
 
 ---
 
